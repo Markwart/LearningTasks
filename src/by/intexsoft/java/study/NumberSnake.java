@@ -83,13 +83,13 @@ public class NumberSnake {
     }
 
     private static void printMatrix(int[][] twoDimArray) {
-        for (int[] arrayInt : twoDimArray) {
+        for (int[] intArray : twoDimArray) {
 
-            String stringArray = Arrays.stream(arrayInt)
+            String stringFromIntArray = Arrays.stream(intArray)
                     .mapToObj(item -> String.format("%03d", item))
                     .collect(Collectors.joining(","));
 
-            System.out.println(stringArray);
+            System.out.println(stringFromIntArray);
         }
     }
 }
