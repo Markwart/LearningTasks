@@ -1,4 +1,4 @@
-package by.intexsoft.java.study;
+package by.intexsoft.java.study.task_1_NumberSnake;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -10,7 +10,7 @@ public class NumberSnake {
 
         int matrixDimension = setMatrixSize();
 
-        int[][] twoDimArray = createMatrix(matrixDimension);
+        int[][] twoDimArray = new int[matrixDimension][matrixDimension];
 
         completeMatrix(matrixDimension, twoDimArray);
 
@@ -23,10 +23,6 @@ public class NumberSnake {
         System.out.print("Enter the matrix size (integer): ");
 
         return scanner.nextInt();
-    }
-
-    private static int[][] createMatrix(int matrixDimension) {
-        return new int[matrixDimension][matrixDimension];
     }
 
     private static void completeMatrix(int matrixDimension, int[][] twoDimArray) {
