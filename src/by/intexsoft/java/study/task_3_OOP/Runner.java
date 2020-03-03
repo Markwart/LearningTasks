@@ -1,10 +1,10 @@
 package by.intexsoft.java.study.task_3_OOP;
 
-import by.intexsoft.java.study.task_3_OOP.api.INumberService;
-import by.intexsoft.java.study.task_3_OOP.service.NumberPyramidService;
-import by.intexsoft.java.study.task_3_OOP.service.NumberSnakeService;
+import by.intexsoft.java.study.task_3_OOP.service.INumberService;
+import by.intexsoft.java.study.task_3_OOP.service.impl.NumberPyramidService;
+import by.intexsoft.java.study.task_3_OOP.service.impl.NumberSnakeService;
 
-public class Init {
+public class Runner {
 
     public static void main(String[] args) {
         INumberService numberSnakeService = new NumberSnakeService();

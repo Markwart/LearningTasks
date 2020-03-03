@@ -1,19 +1,9 @@
-package by.intexsoft.java.study.task_3_OOP.service;
-
-import by.intexsoft.java.study.task_3_OOP.api.INumberService;
+package by.intexsoft.java.study.task_3_OOP.service.impl;
 
 import java.util.Arrays;
-import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class NumberPyramidService implements INumberService {
-    @Override
-    public int[][] createMatrix() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("To get \"Pyramid of numbers\" enter the matrix size (integer): ");
-        int matrixDimension = scanner.nextInt();
-        return new int[matrixDimension][matrixDimension];
-    }
+public class NumberPyramidService extends AbstractNumberService {
 
     @Override
     public void fillWithFieldsMatrix(int[][] twoDimArray) {

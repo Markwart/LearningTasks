@@ -1,4 +1,4 @@
-package by.intexsoft.java.study.task_3_OOP.api;
+package by.intexsoft.java.study.task_3_OOP.service;
 
 public interface INumberService {
 
